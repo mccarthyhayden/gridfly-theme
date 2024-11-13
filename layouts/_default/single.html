@@ -1,6 +1,8 @@
 {{ define "main" }}
 {{ $page := . }}
-
-{{ partial "paige/page.html" $page }}
-{{ partial "paige/comments.html" $page }}
+    <article>
+        <h1>{{ .Title }}</h1>
+        <div>{{ .Content }}</div>
+    </article>
 {{ end }}
+
